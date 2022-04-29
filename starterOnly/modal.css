@@ -479,6 +479,13 @@ footer {
   margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
+
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
   .hero-section {
     display: block;
     box-shadow: unset;
