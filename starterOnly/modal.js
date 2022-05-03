@@ -41,6 +41,17 @@ function checkCondition(condition){
   else return true;
 }
 
+// Send specific error message rather than elementId provided
+// Add aria invalid for use CSS
+function getErrorMessage(elementId, message, inputAssociate){
+  if(elementId && message) {
+    document.getElementById(elementId).style.display = "block";
+    document.getElementById(elementId).innerText = message;
+    if(inputAssociate) inputAssociate.setAttribute("aria-invalid", "true");
+  }
+  else throw new Error('Missing parameter for handler error message');
+}
+
 
 
 
