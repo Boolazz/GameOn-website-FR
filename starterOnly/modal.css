@@ -68,6 +68,14 @@ img {
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -478,6 +486,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
 @media screen and (max-width: 800px) {
 
   .topnav a {display: none;}
