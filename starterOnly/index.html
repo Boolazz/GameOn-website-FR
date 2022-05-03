@@ -54,13 +54,20 @@
 
       <div class="bground">
         <div class="content">
-          <span class="close" href="#"></span>
+          <span class="close" ></span>
+
+          <div 
+            class="formConfirmation">
+            <span>Merci ! Votre réservation a été reçue.</span>
+          </div>
+
+
           <div class="modal-body">
             <form
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return validate();"
+              onsubmit="return validate(this);"
             >
               <div
                 class="formData">
@@ -73,6 +80,8 @@
                   minlength="2"
                 /><br>
               </div>
+              <p class="errorField" id="error-firstName"></p>
+
               <div
                 class="formData">
                 <label>Nom</label><br>
@@ -83,6 +92,8 @@
                   name="last"
                 /><br>
               </div>
+              <p class="errorField" id="error-lastName"></p>
+
               <div
                 class="formData">
                 <label>E-mail</label><br>
@@ -93,6 +104,8 @@
                   name="email"
                 /><br>
               </div>
+              <p class="errorField" id="error-email"></p>
+
               <div
                 class="formData">
                 <label>Date de naissance</label><br>
@@ -103,11 +116,15 @@
                   name="birthdate"
                 /><br>
               </div>
+              <p class="errorField" id="error-birthdate"></p>
+
               <div
                 class="formData">
                 <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
+              <p class="errorField" id="error-tournament"></p>
+
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div
                 class="formData">
@@ -178,6 +195,7 @@
                   Portland</label
                 >
               </div>
+              <p class="errorField" id="error-location"></p>
 
               <div
                 class="formData">
