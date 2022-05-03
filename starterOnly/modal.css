@@ -543,3 +543,23 @@ footer {
   }
 }
 
+.errorField {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.formConfirmation {
+  padding: 3rem 8%;
+  margin: 15px auto;
+  display: none;
+}
+
+input[aria-invalid='true'] {
+  border: 2px solid #fe142f;
+}
+
+input[aria-invalid='false'] {
+  border: 3px solid green;
+}
